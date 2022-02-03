@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        .container-fluid{
+            background-color: aliceblue;
+        }
+          
+        .search{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: 335px;
+        }
+        .btn{
+            position: relative;
+            right: 588px;
+        }
+        input{
+            height: 4vh;
+            width: 31vw;
+            border-radius: 9px;
+            background-color: rgb(255, 255, 255);
+            padding: 4px;
+            font-size: 16px;
+            color: grey;
+        }
+        button{
+            height: 5vh;
+            width: 5vw;
+            border-radius: 9px;
+            background-color: rgb(255, 255, 255);
+            font-size: 16px;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+    <table>
+        <tr>
+        <td>
+   
+    <div class="search">
+    <input type="text" name="number" id="number"  placeholder="Search Table"/>
+</div>
+</td>
+<td>
+<div class="btn">
+   <button type="submit" value="table" onclick="table()"> Table </button>
+</div>
+</td>
+</tr> 
+</table>
+    <script>
+        function table(){
+            var a=1;
+            var b=document.getElementById("number").value;
+            while(a<=10){
+                document.write(a*b);
+                document.write("<br>");
+                a=a+1;
+            }
+        }
+    </script>
+
+</div>
+</body>
+</html>
