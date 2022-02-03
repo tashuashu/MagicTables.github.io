@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Magic Tables</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Rock+3D&family=Rowdies:wght@300&family=Supermercado+One&display=swap');
+
+    .h1 h1 {
+        font-size: 50px;
+        font-family: 'oswald', cursive;
+    }
+
+    .form-control {
+        border: 1px solid black;
+    }
+
+    @media screen and (max-width : 1000px) {
+        .btns button {
+            margin-bottom: 10px;
+        }
+
+    }
+
+    body {
+        background-color: aliceblue;
+    }
+    .hr_1 hr{
+        background-color: black;
+    }
+    span{
+        font-weight: 500;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Magic Tables</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-4">
+        <div class="h1">
+            <h1>Welcome to Magic Tables</h1>
+        </div>
+        <div class="search_2">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Tables</label>
+                <input type="email" class="form-control" id="number" placeholder="Search Tables">
+                <button id="button" onclick="table()" type="button"
+                    class="btn btn-outline-dark my-2 btn-light">Tables</button>
+
+            </div>
+        <div class="hr_1">
+            <hr>
+        </div>
+            <div class="btns">
+                <button type="button" onclick="table_2()" class="btn btn-outline-dark btn-light">Table of 2</button>
+                <button type="button" onclick="table_4()" class="btn btn-outline-dark btn-light">Table of 4</button>
+                <button type="button" onclick="table_8()" class="btn btn-outline-dark btn-light">Table of 8</button>
+                <button type="button" onclick="table_12()" class="btn btn-outline-dark btn-light">Table of 12</button>
+                <button type="button" onclick="table_15()" class="btn btn-outline-dark btn-light">Table of 15</button>
+                <button type="button" onclick="table_20()" class="btn btn-outline-dark btn-light">Table of 20</button>
+                <button type="button" onclick="table_50()" class="btn btn-outline-dark btn-light">Table of 50</button>
+                <button type="button" onclick="table_100()" class="btn btn-outline-dark btn-light">Table of 100</button>
+            </div>
+        </div>
+        <hr>
+        <div class="p"></div>
+        <p>Thanks for Open this Website. <span>Hello!</span> My name is <span>Amay Vyas.</span> I Study in 6th Class. I live in <span>Jaipur.</span> This Website name is <span>Magic Tables.</span> <span>See It</span> and <span> Use It.</span></p>
+        <hr>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+<script>
+
+
+    function table() {
+        var a = 1;
+        var b = document.getElementById("number").value
+        while (a <= 10) {
+            document.write("<br>");
+            document.write(a * b);
+            a = a + 1;
+        }
+
+    }
+    function table_2() {
+        var a = 1;
+        var b = 2;
+        while (a <= 10) {
+            document.write("<br>");
+            document.write(a * b);
+            a = a + 1;
+        }
+
+    }
+    function table_4() {
+        var a = 1;
+        var b = 4;
+        while (a <= 10) {
+            document.write("<br>");
+            document.write(a * b);
+            a = a + 1;
+        }
+
+    }
+    function table_8() {
+        var a = 1;
+        var b = 8;
+        while (a <= 10) {
+            document.write("<br>");
+            document.write(a * b);
+            a = a + 1;
+        }
+
+    }
+    function table_20() {
+        var a = 1;
+        var b = 20;
+        while (a <= 10) {
+            document.write("<br>");
+            document.write(a * b);
+            a = a + 1;
+        }
+
+    }
+    function table_12() {
+        var a = 1;
+        var b = 12;
+        while (a <= 10) {
+            document.write("<br>");
+            document.write(a * b);
+            a = a + 1;
+        }
+
+    }
+    function table_15() {
+        var a = 1;
+        var b = 15;
+        while (a <= 10) {
+            document.write("<br>");
+            document.write(a * b);
+            a = a + 1;
+        }
+
+    }
+    function table_50() {
+        var a = 1;
+        var b = 50;
+        while (a <= 10) {
+            document.write("<br>");
+            document.write(a * b);
+            a = a + 1;
+        }
+
+    }
+    function table_100() {
+        var a = 1;
+        var b = 100;
+        while (a <= 10) {
+            document.write("<br>");
+            document.write(a * b);
+            a = a + 1;
+        }
+
+    }
+    function table_2_1() {
+        var a = 1;
+        var b = document.getElementById("number_2").value;
+        while (a <= 10) {
+            document.write("<br>");
+            document.write(a * b);
+            a = a + 1;
+        }
+
+    }
+</script>
+
+</html>
